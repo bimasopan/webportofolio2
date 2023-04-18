@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portofolio</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 9;
+			font-family: sans-serif;
+			text-decoration: none;
+		}
+		.nav{
+			display: flex;
+			margin: auto;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px 0;
+			width: 84%;
+		}
+		.nav ul li, .dropdown{
+			position: relative;
+			display: inline-block;
+			margin: 10px 20px;
+			list-style: none;
+		}
+		.btn{
+			border: none;
+			background: none;
+			cursor: pointer;
+			position: relative;
+			font-size: 16px;
+		}
+		.dropdown-content a{
+			position: relative;
+			top: 5px;
+		}
+		.btn:hover,.nav a:hover{
+			color: red;
+		}
+		.dropdown-content{
+			display: none;
+    		position: absolute;
+    		background-color: lightgrey;
+    		border-radius: 9px;
+    		min-width: 200px;
+    		z-index: 1;
+		}
+		.judul h1{
+			color: black;
+			font-size: 30px;
+			margin-bottom: 2px;
+			font-family: cursive;
+			position: relative;
+			bottom: 15rem;
+		}
+		span{
+			color: lightblue;
+		}
+		.judul{
+			margin-left: 8%;
+			margin-bottom: 15%;
+		}
+		.judul a{
+			position: relative;
+			bottom: 13rem;
+			padding: 10px 18px;
+			margin: 4rem 0;
+			background-color: lightblue;
+			border-radius: 9px;
+			display: inline-block;
+			margin-left: 20px;
+			box-shadow: 3px 3px 3px  gray;
+		}
+		.judul p{
+			text-align: justify;
+			font-family: sans-serif;
+			position: relative;
+			bottom: 14rem;
+		}
+		.judul a:hover{
+			background-color: skyblue;
+		}
+		.dropdown-content a {
+		    color: black;
+    		padding: 12px 16px;
+    		text-decoration: none;
+    		display: block;
+		}
+
+		.dropdown-content a:hover {background-color: white;}
+		.dropdown:active .dropbtn {background-color: grey;}
+		.dropdown:hover .dropdown-content {display: block;}
+		
+footer{
+	padding: 40px 60px;
+	align-items: center;
+	background-color: gray;
+	text-align: center;
+}
+.judul img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.sena:hover{
+	color: orange;
+}
+.nav button{
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<button onclick="click()"><img src="j.png" width="110px" height="110px"></button>
+		<ul>
+			<div class="dropdown">
+				<button class="btn" onclick="click()">Project</button>
+				<div class="dropdown-content">
+					<a href="#">Blog</a>
+					<a href="#">E-commerce</a>
+					<a href="#">Calculator</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button class="btn">Portofolio</button>
+				<div class="dropdown-content">
+					<a href="Bima sena w.p.pdf">Resume</a>
+					<a href="#">My portofolio</a>
+				</div>
+			</div>
+			<li><a href="#">skills</a></li>
+			<li><a href="https://wa.me/6288230013895">hubungi saya</a></li>
+		</ul>
+	</div>
+	<div class="judul">
+		<img src="l.jpg">
+		<h1>Hi aku <span>Bima <span class="sena">Sena</span></span>_</h1>
+		<p>Web developer && Web desain</p>
+		<a href="#">Download cv</a>
+	</div>
+	<script>
+		function click() {
+			let nama = prompt("Masukan nama: ");
+			alert("selamat datang "+nama);
+		}
+		click();
+	</script>
+</body>
+</html>
